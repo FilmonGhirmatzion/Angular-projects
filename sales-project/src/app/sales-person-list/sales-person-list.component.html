@@ -1,1 +1,19 @@
-<p>sales-person-list works!</p>
+<table border="1">
+  <thead>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>Sales Volume</th>
+    </tr>
+  </thead>
+  <tbody>
+
+  <tr *ngFor="let tempsalesPerson of salesPersonList">
+    <td>{{ tempsalesPerson.firstName }}</td>
+    <td>{{ tempsalesPerson.lastName }}</td>
+    <td>{{ tempsalesPerson.email }}</td>
+    <td>{{ tempsalesPerson.salesVolume | currency }}</td>
+  </tr>
+</tbody>
+</table>
